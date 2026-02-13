@@ -15,7 +15,7 @@ const actionItemSchema = new Schema({
   },
   task: { type: String, required: true },
   owner: { type: String },
-  dueDate: { type: Date },
+  dueDate: { type: String },
   status: {
     type: String,
     enum: ["open", "done"],

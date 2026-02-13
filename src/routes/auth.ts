@@ -24,7 +24,7 @@ route.post("/auth/signup", async (req, res) => {
       });
     }
 
-    const passwordHashed = await bcrypt.hash(password, 20);
+    const passwordHashed = await bcrypt.hash(password, 10);
 
     const user = await User.create({
       username,
